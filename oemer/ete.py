@@ -217,6 +217,7 @@ def extract(args: Namespace) -> str:
 
     # ---- Write out the MusicXML ---- #
     out_path = args.output_path
+    print(f"Output Path is {out_path}")
     if not out_path.endswith(".musicxml"):
         # Take the output path as the folder.
         out_path = os.path.join(out_path, basename+".musicxml")
